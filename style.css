@@ -128,17 +128,18 @@ nav a {
   padding: 20px;
   margin: 20px 0;
 }
+
 .new {
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
   background-color: #f2f2f2;
   padding: 10px;
   margin: 10px 0;
 }
+
 .news-item {
   flex: 1 1 45%;
-  min-width: 280px;
+  max-width: 580px;
 }
 
 .more {
@@ -158,4 +159,26 @@ nav a {
 
 .read-more:hover {
   color: #0056b3;
+}
+
+.QuickLinks {
+  background-color: #7171714f;
+  padding: 4px;
+  margin: 2px;
+  width: 100%;
+}
+
+.QuickLinks-item {
+  font-size: 18px;
+  background-color: #1c74e7;
+  margin: 0;
+  padding: 5px;
+  color: black;
+  text-align: center;
+}
+
+@media (max-width: 868px) {
+  .new {
+    flex-direction: column;
+  }
 }
