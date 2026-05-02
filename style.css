@@ -57,14 +57,13 @@ nav a {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%;
   left: 0;
   background-color: #56c5de;
   width: 340%;
   list-style: none;
   padding: 10px 0;
   margin: 0;
-  z-index: 1000;
+  z-index: 10;
 }
 
 .dropdown-content li {
@@ -101,14 +100,14 @@ nav a {
 .slideshow {
   position: relative;
   width: 100%;
-  max-width: 800px;
-  margin: 20px auto;
+  /* max-width: 800px; */
+  margin: 10px;
   overflow: hidden;
 }
 
 .slide {
   display: none;
-  width: 90%;
+  width: 100%;
 }
 
 .slide.active {
@@ -143,7 +142,9 @@ nav a {
 }
 
 .more {
-  display: none;
+  /* display: none; */
+  font-style: italic;
+  font: optional;
 }
 
 .read-more {
@@ -180,5 +181,91 @@ nav a {
 @media (max-width: 868px) {
   .new {
     flex-direction: column;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    margin: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav li {
+    width: 100%;
+  }
+
+  nav a {
+    padding: 15px 20px;
+    text-align: center;
+  }
+
+  .dropdown-content {
+    position: static;
+    display: none;
+    width: 100%;
+    background-color: #56c5de;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .slide {
+    width: 100%;
+  }
+
+  .news {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .news-item {
+    flex: 1 1 100%;
+  }
+
+  .QuickLinks {
+    width: 100%;
+  }
+
+  .QuickLinks-item {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+/* Tablet responsiveness */
+@media (min-width: 769px) and (max-width: 1024px) {
+  nav ul {
+    justify-content: space-around;
+  }
+
+  nav a {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .news-item {
+    flex: 1 1 48%;
+  }
+
+  .QuickLinks {
+    width: 100%;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1025px) {
+  nav a {
+    padding: 10px 25px;
+  }
+
+  .news-item {
+    flex: 1 1 45%;
   }
 }
