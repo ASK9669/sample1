@@ -4,218 +4,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASTU website</title>
+    <title>ASTU website - Adama Science and Technology University</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <header>
-        <img src="./Astu.png" alt="ASTU logo" class="logo">
+        <img src="./Astu.png" alt="ASTU logo" class="logo" loading="lazy">
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="navbar" id="navbar">
+        <ul class="nav-menu">
+            <li><a href="#" class="nav-link">Home</a></li>
             <li class="dropdown">
-                <a href="#" class="dropbtn">Latest</a>
+                <button class="dropbtn" aria-label="Latest menu" aria-expanded="false">Latest <span
+                        class="arrow"></span></button>
                 <ul class="dropdown-content">
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Upcoming Events</a></li>
-                    <li><a href="#">Achieve News</a></li>
-                    <li><a href="#">ASTU Visitors</a></li>
-                </ul>
-            </li>
-            <li class="dropdown about-dropdown">
-                <a href="#" class="dropbtn">About</a>
-                <ul class="dropdown-content ">
-                    <li><a href="#">President's Message</a></li>
-                    <li><a href="#">Background of aSTU</a></li>
-                    <li><a href="#">Mission & Vision</a></li>
-                    <li><a href="#">Maps and Directions</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Academics</a>
-                <ul class="dropdown-content">
-                    <li><a href="#">Electrical Engineering & Computing</a></li>
-                    <li><a href="#">Mechanical Engineering</a></li>
-                    <li><a href="#">Civil Engineering & Architecture</a></li>
-                    <li><a href="#">Applied Natural Sciences</a></li>
-                    <li><a href="#">Social Sciences and Humanities</a></li>
+                    <li><a href="#" class="nav-link">News</a></li>
+                    <li><a href="#" class="nav-link">Upcoming Events</a></li>
+                    <li><a href="#" class="nav-link">Archive News</a></li>
+                    <li><a href="#" class="nav-link">ASTU Visitors</a></li>
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="#" class="dropbtn">Admissions</a>
+                <button class="dropbtn" aria-label="About menu" aria-expanded="false">About <span
+                        class="arrow"></span></button>
                 <ul class="dropdown-content">
-                    <li><a href="">What is New</a></li>
-                    <li><a href="">Registration Procedure</a></li>
-                    <li><a href="">Important Documents</a></li>
-                    <li><a href="">Acadamic calender</a></li>
+                    <li><a href="#" class="nav-link">President's Message</a></li>
+                    <li><a href="#" class="nav-link">Background of ASTU</a></li>
+                    <li><a href="#" class="nav-link">Mission & Vision</a></li>
+                    <li><a href="#" class="nav-link">Maps and Directions</a></li>
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="#" class="dropbtn">Research</a>
+                <button class="dropbtn" aria-label="Academics menu" aria-expanded="false">Academics <span
+                        class="arrow"></span></button>
                 <ul class="dropdown-content">
-                    <li><a href="#">Research Centers</a></li>
-                    <li><a href="#">Research Projects</a></li>
-                    <li><a href="#">Publications</a></li>
+                    <li><a href="#" class="nav-link">Electrical Engineering & Computing</a></li>
+                    <li><a href="#" class="nav-link">Mechanical Engineering</a></li>
+                    <li><a href="#" class="nav-link">Civil Engineering & Architecture</a></li>
+                    <li><a href="#" class="nav-link">Applied Natural Sciences</a></li>
+                    <li><a href="#" class="nav-link">Social Sciences and Humanities</a></li>
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="#" class="dropbtn">Office</a>
+                <button class="dropbtn" aria-label="Admissions menu" aria-expanded="false">Admissions <span
+                        class="arrow"></span></button>
                 <ul class="dropdown-content">
-                    <li><a href="#">Administration</a></li>
-                    <li><a href="#">Human Resources</a></li>
-                    <li><a href="#">Finance</a></li>
+                    <li><a href="#" class="nav-link">What is New</a></li>
+                    <li><a href="#" class="nav-link">Registration Procedure</a></li>
+                    <li><a href="#" class="nav-link">Important Documents</a></li>
+                    <li><a href="#" class="nav-link">Academic Calendar</a></li>
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="#" class="dropbtn">Alumni</a>
+                <button class="dropbtn" aria-label="Research menu" aria-expanded="false">Research <span
+                        class="arrow"></span></button>
                 <ul class="dropdown-content">
-                    <li><a href="#">Alumni Association</a></li>
-                    <li><a href="#">Alumni Network</a></li>
-                    <li><a href="#">Alumni Events</a></li>
+                    <li><a href="#" class="nav-link">Research Centers</a></li>
+                    <li><a href="#" class="nav-link">Research Projects</a></li>
+                    <li><a href="#" class="nav-link">Publications</a></li>
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="#" class="dropbtn">Library Services</a>
+                <button class="dropbtn" aria-label="Office menu" aria-expanded="false">Office <span
+                        class="arrow"></span></button>
                 <ul class="dropdown-content">
-                    <li><a href="#">Catalog</a></li>
-                    <li><a href="#">Online Resources</a></li>
-                    <li><a href="#">Research Support</a></li>
+                    <li><a href="#" class="nav-link">Administration</a></li>
+                    <li><a href="#" class="nav-link">Human Resources</a></li>
+                    <li><a href="#" class="nav-link">Finance</a></li>
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="#" class="dropbtn">Linkages</a>
+                <button class="dropbtn" aria-label="Alumni menu" aria-expanded="false">Alumni <span
+                        class="arrow"></span></button>
                 <ul class="dropdown-content">
-                    <li><a href="#">ASTU Partners</a></li>
-                    <li><a href="#">Abroad University Collaborations</a></li>
-                    <li><a href="#">Local University Collaborations</a></li>
+                    <li><a href="#" class="nav-link">Alumni Association</a></li>
+                    <li><a href="#" class="nav-link">Alumni Network</a></li>
+                    <li><a href="#" class="nav-link">Alumni Events</a></li>
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="#" class="dropbtn">Announcements</a>
+                <button class="dropbtn" aria-label="Library Services menu" aria-expanded="false">Library Services <span
+                        class="arrow"></span></button>
                 <ul class="dropdown-content">
-                    <li><a href="#">General Announcements</a></li>
-                    <li><a href="#">Event Announcements</a></li>
+                    <li><a href="#" class="nav-link">Catalog</a></li>
+                    <li><a href="#" class="nav-link">Online Resources</a></li>
+                    <li><a href="#" class="nav-link">Research Support</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn" aria-label="Linkages menu" aria-expanded="false">Linkages <span
+                        class="arrow"></span></button>
+                <ul class="dropdown-content">
+                    <li><a href="#" class="nav-link">ASTU Partners</a></li>
+                    <li><a href="#" class="nav-link">International Collaborations</a></li>
+                    <li><a href="#" class="nav-link">Local Collaborations</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn" aria-label="Announcements menu" aria-expanded="false">Announcements <span
+                        class="arrow"></span></button>
+                <ul class="dropdown-content">
+                    <li><a href="#" class="nav-link">General Announcements</a></li>
+                    <li><a href="#" class="nav-link">Event Announcements</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 
     <main>
-        <section class="slideshow">
-            <div class="slide active">
-                <img src="./download (3).jpeg" alt="ASTU Campus 1"><h5>Adama Science And Technology Universty Gada Gate</h5>
+        <section class="slideshow" aria-label="Campus photo carousel">
+            <div class="slide active" role="group" aria-label="Slide 1 of 3">
+                <img src="./download (3).jpeg" alt="ASTU Campus - Gada Gate" loading="lazy">
+                <h5>Adama Science And Technology University Gada Gate</h5>
             </div>
-            <div class="slide">
-                <img src="./download (1).jpeg" alt="ASTU Campus 2"><h5>Adama Science And Technology Universty Gada Gate</h5>
+            <div class="slide" role="group" aria-label="Slide 2 of 3">
+                <img src="./download (1).jpeg" alt="ASTU Campus - View 2" loading="lazy">
+                <h5>Adama Science And Technology University Campus View</h5>
             </div>
-            <div class="slide">
-                <img src="./download (2).jpeg" alt="ASTU Campus 3" > <h5>Adama Science And Technology Universty Main  Gate</h5>
+            <div class="slide" role="group" aria-label="Slide 3 of 3">
+                <img src="./download (2).jpeg" alt="ASTU Campus - Main Gate" loading="lazy">
+                <h5>Adama Science And Technology University Main Gate</h5>
+            </div>
+
+            <button class="slide-btn prev" id="prevBtn" aria-label="Previous slide">&#10094;</button>
+            <button class="slide-btn next" id="nextBtn" aria-label="Next slide">&#10095;</button>
+
+            <div class="slide-indicators">
+                <span class="indicator active" data-slide="0" aria-label="Go to slide 1"></span>
+                <span class="indicator" data-slide="1" aria-label="Go to slide 2"></span>
+                <span class="indicator" data-slide="2" aria-label="Go to slide 3"></span>
             </div>
         </section>
 
-        <div class="new">
-            <div class="news">
-                <div class="news-item">
-                    <span>Adama Science and Technology University (ASTU) solidified its commitment to institutional
-                        excellence and accountability through performing key activities on October 26, 2025, as
-                        President Dr. Lemi Guta and the university vice presidents and their respective officials signed
-                        Key Performance Indicators (KPIs) contract at the Pyramid Hotels and Resorts in Bishoftu.
-                        <span class="more">The strategic signing event marks the formal agreement by the university
-                            leadership to meet expected success and efficiency in the current academic year.
-                            In his welcoming remarks, Dr. Lemi urged "all the managing council members to efficiently
-                            perform as per the agreement, stressing that the KPIs are essential tools for achieving
-                            ASTU’s long-term strategic vision.</span>
-                    </span>
-                    <button class="read-more"><b>Read More</b></button>
+        <div class="content-wrapper">
+            <div class="news-container">
+                <section class="news">
+                    <article class="news-item">
+                        <h3>ASTU Leadership Signs Key Performance Indicators</h3>
+                        <p class="summary">Adama Science and Technology University (ASTU) solidified its commitment to
+                            institutional excellence and accountability through performing key activities on October 26,
+                            2025, as President Dr. Lemi Guta and the university vice presidents and their respective
+                            officials signed Key Performance Indicators (KPIs) contract at the Pyramid Hotels and
+                            Resorts in Bishoftu.</p>
+                        <p class="more" style="display:none;">The strategic signing event marks the formal agreement by
+                            the university leadership to meet expected success and efficiency in the current academic
+                            year. In his welcoming remarks, Dr. Lemi urged "all the managing council members to
+                            efficiently perform as per the agreement, stressing that the KPIs are essential tools for
+                            achieving ASTU's long-term strategic vision.</p>
+                        <button class="read-more" aria-expanded="false">Read More</button>
+                    </article>
 
-                </div>
-                <div class="news-item">
-                    <span>Adama Science and Technology University (ASTU) solidified its commitment to institutional
-                        excellence and accountability through performing key activities on October 26, 2025, as
-                        President Dr. Lemi Guta and the university vice presidents and their respective officials signed
-                        Key Performance Indicators (KPIs) contract at the Pyramid Hotels and Resorts in Bishoftu.
-                        <span class="more">The strategic signing event marks the formal agreement by the university
-                            leadership to meet expected success and efficiency in the current academic year.
-                            In his welcoming remarks, Dr. Lemi urged "all the managing council members to efficiently
-                            perform as per the agreement, stressing that the KPIs are essential tools for achieving
-                            ASTU’s long-term strategic vision.</span>
-                    </span>
-                    <button class="read-more"><b>Read More</b></button>
-                </div>
-                <div class="news-item">
-                    <span>The commitment to accountability was systematically cascaded through the university
-                        structure. Following the President’s signing, the three Vice Presidents and CEO of the
-                        president office have formalized agreements with their respective office heads.
-                        <span class="more">Accordingly:
-                            Dr. Teshome Abdo, Vice President for Academic Affairs, signed KPIs with his College Deans,
-                            Directors and Executives.
-                            Dr. Lema Beresa, Vice President for Research and Technology Transfer, formalized agreements
-                            with his Deans, Directors and executives.
-                            Dr. Solomon Tiruneh, Vice President for Administration and Development, signed the KPIs with
-                            his Dean, and Executives.
-                            Professor Yadesa Melaku, chief executive officer of the president office has signed the
-                            agreement with executive officers.</span>
-                    </span>
-                    <button class="read-more"><b>Read More</b></button>
-                </div>
-                <div class="news-item">
-                    <span>The commitment to accountability was systematically cascaded through the university
-                        structure. Following the President’s signing, the three Vice Presidents and CEO of the
-                        president office have formalized agreements with their respective office heads.
-                        <span class="more">Accordingly:
-                            Dr. Teshome Abdo, Vice President for Academic Affairs, signed KPIs with his College Deans,
-                            Directors and Executives.
-                            Dr. Lema Beresa, Vice President for Research and Technology Transfer, formalized agreements
-                            with his Deans, Directors and executives.
-                            Dr. Solomon Tiruneh, Vice President for Administration and Development, signed the KPIs with
-                            his Dean, and Executives.
-                            Professor Yadesa Melaku, chief executive officer of the president office has signed the
-                            agreement with executive officers.</span>
-                    </span>
-                    <button class="read-more"><b>Read More</b></button>
-                </div>
-            </div>
+                    <article class="news-item">
+                        <h3>KPIs Cascade Through University Structure</h3>
+                        <p class="summary">The commitment to accountability was systematically cascaded through the
+                            university structure. Following the President's signing, the three Vice Presidents and CEO
+                            of the president office have formalized agreements with their respective office heads.</p>
+                        <p class="more" style="display:none;">Dr. Teshome Abdo, Vice President for Academic Affairs,
+                            signed KPIs with his College Deans, Directors and Executives. Dr. Lema Beresa, Vice
+                            President for Research and Technology Transfer, formalized agreements with his Deans,
+                            Directors and executives. Dr. Solomon Tiruneh, Vice President for Administration and
+                            Development, signed the KPIs with his Dean, and Executives. Professor Yadesa Melaku, chief
+                            executive officer of the president office has signed the agreement with executive officers.
+                        </p>
+                        <button class="read-more" aria-expanded="false">Read More</button>
+                    </article>
 
-            <div class="QuickLinks">
-                <div class="QuickLinks-item">
-                    <h3><img src="./AStUlogo.png" alt="Astu logo" style="width: 40px; border-radius: 50%;">QUICK LINKS</h3>
-                </div>
+                    <article class="news-item">
+                        <h3>Accountability Implemented Across Departments</h3>
+                        <p class="summary">The commitment to accountability was systematically cascaded through the
+                            university structure. Following the President's signing, the three Vice Presidents and CEO
+                            of the president office have formalized agreements with their respective office heads.</p>
+                        <p class="more" style="display:none;">Dr. Teshome Abdo, Vice President for Academic Affairs,
+                            signed KPIs with his College Deans, Directors and Executives. Dr. Lema Beresa, Vice
+                            President for Research and Technology Transfer, formalized agreements with his Deans,
+                            Directors and executives. Dr. Solomon Tiruneh, Vice President for Administration and
+                            Development, signed the KPIs with his Dean, and Executives. Professor Yadesa Melaku, chief
+                            executive officer of the president office has signed the agreement with executive officers.
+                        </p>
+                        <button class="read-more" aria-expanded="false">Read More</button>
+                    </article>
+
+                    <article class="news-item">
+                        <h3>ASTU Strengthens Institutional Excellence</h3>
+                        <p class="summary">The commitment to accountability was systematically cascaded through the
+                            university structure. Following the President's signing, the three Vice Presidents and CEO
+                            of the president office have formalized agreements with their respective office heads.</p>
+                        <p class="more" style="display:none;">Dr. Teshome Abdo, Vice President for Academic Affairs,
+                            signed KPIs with his College Deans, Directors and Executives. Dr. Lema Beresa, Vice
+                            President for Research and Technology Transfer, formalized agreements with his Deans,
+                            Directors and executives. Dr. Solomon Tiruneh, Vice President for Administration and
+                            Development, signed the KPIs with his Dean, and Executives. Professor Yadesa Melaku, chief
+                            executive officer of the president office has signed the agreement with executive officers.
+                        </p>
+                        <button class="read-more" aria-expanded="false">Read More</button>
+                    </article>
+                </section>
+
+                <aside class="quick-links">
+                    <div class="quick-links-header">
+                        <img src="./AStUlogo.png" alt="ASTU logo"
+                            style="width: 40px; border-radius: 50%; margin-right: 10px;" loading="lazy">
+                        <h3>QUICK LINKS</h3>
+                    </div>
+                    <ul>
+                        <li><a href="#">Admissions Portal</a></li>
+                        <li><a href="#">Academic Calendar</a></li>
+                        <li><a href="#">Library Services</a></li>
+                        <li><a href="#">Student Portal</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </aside>
             </div>
         </div>
     </main>
-    <script>
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.slide');
 
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.classList.toggle('active', i === index);
-            });
-        }
+    <footer>
+        <p>&copy; 2025 Adama Science and Technology University. All rights reserved.</p>
+    </footer>
 
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        setInterval(nextSlide, 3000); // Change image every 3 seconds
-
-        // Read More functionality for each news item
-        document.querySelectorAll('.news-item').forEach((item) => {
-            const readMoreBtn = item.querySelector('.read-more');
-            const moreText = item.querySelector('.more');
-
-            if (!readMoreBtn || !moreText) return;
-
-            readMoreBtn.addEventListener('click', () => {
-                const isHidden = moreText.style.display === 'none' || moreText.style.display === '';
-                moreText.style.display = isHidden ? 'inline' : 'none';
-                readMoreBtn.textContent = isHidden ? 'Read Less' : 'Read More';
-            });
-        });
-    </script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
